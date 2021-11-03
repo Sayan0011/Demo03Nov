@@ -1,0 +1,28 @@
+C:\Users\Admin\Desktop\Training_Selenium\Jar_files\GirSetup_demo
+
+
+Start server/hub
+java -jar selenium-server-standalone-3.141.59.jar -port 4444 -role hub
+
+
+
+
+node/client - firefox
+
+java -Dwebdriver.gecko.driver=C:\Users\Admin\Desktop\Training_Selenium\Jar_files\GirSetup_demo\geckodriver_64.exe -jar selenium-server-standalone-3.141.59.jar -role node -hub http://192.168.1.10:4444/grid/register/ -browser browserName=firefox -port 5555
+
+
+
+node/client - chrome
+
+java -Dwebdriver.chrome.driver=C:\Users\Admin\Desktop\Training_Selenium\Jar_files\GirSetup_demo\chromedriver_90.exe -jar selenium-server-standalone-3.141.59.jar -role node -hub http://192.168.1.10:4444/grid/register/ -browser browserName=chrome -port 5566
+
+
+node/client - ie
+
+java -Dwebdriver.ie.driver=C:\Users\Admin\Desktop\Training_Selenium\Jar_files\GirSetup_demo\IEDriverServer_32.exe -jar selenium-server-standalone-3.141.59.jar -role node -hub http://192.168.1.10:4444/grid/register/ -browser browserName=chrome -port 5577
+
+Node details:
+http://192.168.1.10:5555
+http://192.168.1.10:5566
+http://192.168.1.10:5577
